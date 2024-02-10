@@ -9,7 +9,7 @@
    
 <script>
    
-    document.body.style.backgroundColor ="#ff8133"
+    document.body.style.backgroundColor ="#86d169"
     document.body.onmousedown = mous2;
 var q = 55// стандарт размера.
 var otstup=q
@@ -385,7 +385,7 @@ function colorize(q,arr){
 	for(let i=0;i<8;i++){
 		for(let j=0;j<8;j++){
 			if((i+j)/2!=Math.floor((i+j)/2)){
-			pole_k[i][j].style.backgroundColor="black";
+                pole_k[i][j].style.backgroundColor ="#5d615c";
             pole_k[i][j].select=false;
 			}}}}
 //q=1 - закраска селектов.
@@ -544,7 +544,7 @@ function pole(){
     //     
 
  p=document.body.appendChild(document.createElement("div"));
- p.style.position="absolute";
+    p.style.position = "absolute";
  p.style.background="purple";
  p.style.width=q*10+"px";
  p.style.height=q*10+"px";
@@ -565,7 +565,7 @@ function kletka(x,y,black){
 var k=document.body.appendChild(document.createElement("div"));
   k.style.position="absolute";
   k.style.background="white";
-  if(black)k.style.background="#878682";
+    if (black) k.style.background ="#5d615c";
   k.style.width=q+"px";
   k.style.height=q+"px";
   k.style.left=otstup+q+x*q+"px";
